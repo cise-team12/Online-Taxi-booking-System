@@ -1,0 +1,109 @@
+
+#bhome
+{
+	color : rgb(254, 199, 7);
+	font-style:Bold;
+	text-align: left;
+	
+}
+#bhome:hover{
+	font-weight: bold;
+	font-style: Underline;
+	
+}
+
+#all
+	{
+	padding: 30px;
+	
+	border-radius: 80px 10px 80px 10px;
+	}
+#add{
+	float : left;
+	width : 150px;
+}
+
+.button {
+	background-color:transparent;
+	
+	
+	cursor:pointer;
+	color:rgb(254, 199, 7);
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size:28px;
+	font-style:italic;
+	text-decoration:none;
+}
+
+p#declare
+	{
+	font-style: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	color:rgb(254, 199, 7);
+	font-size:18px;
+	font-style:italic;
+	text-align: left;
+	}
+	
+p#signature
+	{
+	font-style: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	color:rgb(254, 199, 7);
+	font-size:18px;
+	font-style:italic;
+	text-align: left;
+	}
+	
+#menu
+	{
+	text-align: left;
+	
+	padding: 10px;
+	font-style: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	color:rgb(254, 199, 7);
+	}
+#menu a:hover
+{
+	font-weight: bold;
+	font-style: Underline;
+}
+	
+body {
+    background-image: url("images/asphalt-texture.jpg");
+	
+   background-repeat:no-repeat;
+	position:absolute;
+   background-size:cover;
+}
+
+
+h1 {
+	padding-top: 60px;
+	text-align: left;
+	color: rgb(254, 199, 7);
+	font-size: 60px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+h2 {
+	padding-top: 30px;
+	padding-bottom: 0px;
+	text-align: left;
+	color: rgb(254, 199, 7);
+	font-size: 60px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+h3 {
+	text-align: Center;
+	color: white;
+	font-size: 75px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+
+
+
+#request {
+		text-align: left;
+	color: white;
+}

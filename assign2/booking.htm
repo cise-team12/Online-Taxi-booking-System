@@ -1,0 +1,63 @@
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+  <head> 
+    <title>Request</title> 
+	<script type="text/javascript" src="xhr.js"></script>
+    <script type="text/javascript" src="booking.js"> </script>
+    <link href="style.css" rel="stylesheet">
+	<style>
+		form { width: 1200px; font-style: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; color:white; font-style: 'bold'; font-size: 18px;}
+		label { float: left; width: 150px; }
+		
+		input[type=text] { float: left; width: 250px; }
+		
+		input[type=date] { float: left; width: 150px; }
+		
+		</style>
+  </head> 
+  <body>
+  <div id = "all">
+  <!--this sets up all the input fields for the user to put in their details-->
+  	<h2>Request A Cab</h2>
+
+  	<center><div id="confirmation"> 
+	    <p></p>  
+	</div> </center><br/><br/>
+	<div id="request">
+	<form>
+		<label for="namefield" >Name: </label>
+		<input type="text" id='namefield' name="namefield" required>		<br/><br/>
+		
+		<label for="mobi" >Mobile Contact:</label>
+		<input type="text" name="mobi" required>		<br/><br/>
+		
+		<label for="date" >Booking Date:</label>
+		<input required type="date" name="date" value="YYYY-MM-DD" style="text-align: center" maxlength="10"><br/><br/>
+		
+		<label for="time" >Booking Time:</label>
+		<input required type="time" name="time" value="00:00:00" style="text-align: center" maxlength="8"><br/><br/>
+		
+		<label for="unit" >Pickup Location:</label>
+		
+		<input type="text" name="unit" size="4" maxlength="4" placeholder = "Unit"><br/><br/>
+		
+		<label for="number" > :</label>
+		<input type="text" name="number" size="4" maxlength="4" placeholder = "Number"><br/><br/>
+		
+		<label for="address" > :</label>
+		<input type="text"  name="address" placeholder = "Address"></br><br/>
+		
+		
+		
+		<label for="destination" > Destination:</label>
+		<input type="text"  name="destination" placeholder = "Destination"><br/><br/>
+		
+
+		<!--Sends all the data entered to the php booking file-->
+	    <input name="submit" type = "button" onClick = "booking('booking.php','confirmation', namefield.value, mobi.value, date.value, time.value, number.value, address.value, destination.value) " value = "Submit Booking">
+		
+	</form>
+	</div>
+	<a id="bhome" href="home.html" class="button" style="cursor:pointer;">Home </a>
+	</div>
+ </body> 
+</HTML>
